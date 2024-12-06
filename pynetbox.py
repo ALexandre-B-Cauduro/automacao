@@ -5,8 +5,8 @@ from requests.packages.urllib3.exceptions import InsecureRequestWarning
 requests.packages.urllib3.disable_warnings(InsecureRequestWarning)
 # Conexão com a API do NetBox
 nb = pynetbox.api(
-   'https://netbox.ger.tche.br/',   # URL do NetBox
-   token='15bb8d596de8c17fac6a7b6a73579d7cb91e46e5'         # Token de autenticação
+   'https://netbox/',   # URL do NetBox
+   token='xxxxxxxxxxxxxxxxxxxxxxxxxxxx'         # Token de autenticação
 )
 
 nb.http_session.verify = False # Desativa verificação SSL
