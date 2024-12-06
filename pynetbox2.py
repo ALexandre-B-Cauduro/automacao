@@ -18,8 +18,8 @@ def init_netbox(url: str, token: str) -> pynetbox.core.api.Api:
    return nb
 
 class Device(BaseModel):
-   api_url: ClassVar[str] = "https://netbox.ger.tche.br/"
-   token: ClassVar[str] = "15bb8d596de8c17fac6a7b6a73579d7cb91e46e5"
+   api_url: ClassVar[str] = "https://netbox/"
+   token: ClassVar[str] = "xxxxxxxxxxxxxxxxxxxxxx"
    nb: ClassVar[pynetbox.core.api.Api] = init_netbox(api_url, token)
 
    def update_serial(self, device_id: int, new_serial: str) -> bool:
